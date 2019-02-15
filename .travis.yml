@@ -3,7 +3,7 @@ services:
   - docker
 
 before-install:
-  - docker build -t hyedocker/docker-react -f Dockerfile.dev . 
+  - docker build -t nm-docker-react -f Dockerfile.dev . 
 
 script:
-  - docker run hyedocker/docker-react npm run test -- --coverage
+  - docker run nm-docker-react npm run test -- --coverage
